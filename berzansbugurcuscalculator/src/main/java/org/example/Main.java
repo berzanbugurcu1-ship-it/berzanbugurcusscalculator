@@ -19,7 +19,7 @@ public class Main {
 
             switch (choice) {
                 case 1:{
-                    System.out.println("Skriv in första numret:");          //Addera tal
+                    System.out.println("Skriv in första numret:");          //fixa modulus imorgon för vg, lägg till hur du tänkt och förklaringar/reflektioner bakom koden
                     int num1 = scanner.nextInt();
                     System.out.println("Skriv in andra numret:");
                     int num2 = scanner.nextInt();
@@ -35,16 +35,30 @@ public class Main {
                     int num2 = scanner.nextInt();
 
                     Subtraktion sub = new Subtraktion(num1, num2);
-                    System.out.println(sub.toString());                               //Subtrahera tal
+                    System.out.println(sub.toString());
                     break;}
 
-                case 3:                     //Multiplicera tal
-                    break;
+                case 3:{
+                    System.out.println("Skriv in första numret:");
+                    int num1 = scanner.nextInt();
+                    System.out.println("Skriv in andra numret:");
+                    int num2 = scanner.nextInt();
 
-                case 4:              //Dividera tal
-                    break;
+                    Multiplikation multi = new Multiplikation(num1, num2);
+                    System.out.println(multi.toString());
+                    break;}
 
-                case 0:               //Exit för programmet
+                case 4:{
+                    System.out.println("Skriv in första numret:");
+                    int num1 = scanner.nextInt();
+                    System.out.println("Skriv in andra numret:");
+                    int num2 = scanner.nextInt();
+
+                    Division div = new Division(num1, num2);
+                    System.out.println(div.toString());
+                    break;}
+
+                case 5:
                     running = false;
                     break;
                 default:
