@@ -8,16 +8,16 @@ public class Division {
         this.y = y;
     }
 
-    public int div(int x, int y) {
+    public double div(int x, int y) {
         if (y == 0) {
             throw new IllegalArgumentException("Fel: Kan ej dividera med noll");
         }
-        return (int) x / y;
+        return (double) x / y;
     }
 
     @Override
     public String toString() {
-        if (y == 0) {
+        try {
             return "Fel: Division med noll funkar inte";
         }
         return "Svar: " + div(x, y);
