@@ -15,12 +15,29 @@ public class Main {
 
             int choice = scanner.nextInt();
 
-            switch (choice) {}
-                case 1:
-                break
+            switch (choice) {
+                case 1:            //Addera tal
+                    break;
 
+                case 2:          //Subtrahera tal
+                    break;
 
+                case 3:                     //Multiplicera tal
+                    break;
 
+                case 4:              //Dividera tal
+                    break;
+
+                case 0:               //Exit för programmet
+                    running = false;
+                    break;
+                default:
+                    System.out.println("Felaktigt val, testa igen!");
+
+            }
         }
+
+        scanner.close();
+
     }
 }
