@@ -17,7 +17,7 @@ public class Division {
 
     @Override
     public String toString() {
-        try {
+        if (y == 0) {
             return "Fel: Division med noll funkar inte";
         }
         return "Svar: " + div(x, y);
