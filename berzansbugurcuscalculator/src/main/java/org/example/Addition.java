@@ -1,3 +1,5 @@
+package org.example;
+
 public class Addition {
 
     private int x,y;
@@ -9,16 +11,11 @@ public class Addition {
     }
 
     public int add(int x, int y) {
-        int sum = 0;
-
-        sum += x + y;
-
-
-        return sum;
+        return x + y;
     }
 
     @Override
     public String toString() {
-        return "Svar: " + add(x,y);
+        return "Svar: " + add(x, y);
     }
 }

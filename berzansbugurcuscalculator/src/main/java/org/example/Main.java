@@ -1,3 +1,5 @@
+package org.example;
+
 import java.util.Scanner;
 
 public class Main {
@@ -16,11 +18,25 @@ public class Main {
             int choice = scanner.nextInt();
 
             switch (choice) {
-                case 1:            //Addera tal
-                    break;
+                case 1:{
+                    System.out.println("Skriv in första numret:");          //Addera tal
+                    int num1 = scanner.nextInt();
+                    System.out.println("Skriv in andra numret:");
+                    int num2 = scanner.nextInt();
 
-                case 2:          //Subtrahera tal
-                    break;
+                    Addition add = new Addition(num1, num2);
+                    System.out.println(add.toString());
+                    break;}
+
+                case 2:{
+                    System.out.println("Skriv in första numret:");
+                    int num1 = scanner.nextInt();
+                    System.out.println("Skriv in andra numret:");
+                    int num2 = scanner.nextInt();
+
+                    Subtraktion sub = new Subtraktion(num1, num2);
+                    System.out.println(sub.toString());                               //Subtrahera tal
+                    break;}
 
                 case 3:                     //Multiplicera tal
                     break;
