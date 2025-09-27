@@ -31,14 +31,6 @@ public class Main {
 
 
                 case 2: {
-                    System.out.println("Skriv in första numret:");
-                    int num1 = scanner.nextInt();
-                    System.out.println("Skriv in andra numret:");
-                    int num2 = scanner.nextInt();
-
-                    Subtraktion sub = new Subtraktion(num1, num2);
-                    System.out.println(sub.toString());
-                    break;
 
                 }
 
