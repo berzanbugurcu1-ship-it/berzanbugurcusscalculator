@@ -41,8 +41,15 @@ public class Main {
                 }
 
                 case 3: {
+                    System.out.println("Skriv in första numret:");
+                    int num1 = scanner.nextInt();
+                    System.out.println("Skriv in andra numret:");
+                    int num2 = scanner.nextInt();
 
-                }
+                    Multiplikation multi = new Multiplikation(num1, num2);
+                    System.out.println(multi.toString());
+                    break;}
+            }
 
                 case 4: {
                 }
