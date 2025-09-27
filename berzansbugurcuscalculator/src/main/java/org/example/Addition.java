@@ -1,0 +1,21 @@
+package org.example;
+
+public class Addition {
+
+    private int x,y;
+
+
+    public Addition(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public int add(int x, int y) {
+        return x + y;
+    }
+
+    @Override
+    public String toString() {
+        return "Svar: " + add(x, y);
+    }
+}
