@@ -48,10 +48,18 @@ public class Main {
 
                     Multiplikation multi = new Multiplikation(num1, num2);
                     System.out.println(multi.toString());
-                    break;}
+                    break;
             }
 
                 case 4: {
+                    System.out.println("Skriv in första numret:");
+                    int num1 = scanner.nextInt();
+                    System.out.println("Skriv in andra numret:");
+                    int num2 = scanner.nextInt();
+
+                    Division div = new Division(num1, num2);
+                    System.out.println(div.toString());
+                    break;
                 }
 
                 case 5:
