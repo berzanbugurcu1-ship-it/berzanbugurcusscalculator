@@ -18,19 +18,28 @@ public class Main {
             int choice = scanner.nextInt();
 
             switch (choice) {
-                case 1:{
-                    }
+                case 1: {
+                    System.out.println("Skriv in första numret:");          //fixa modulus imorgon för vg, lägg till hur du tänkt och förklaringar/reflektioner bakom koden
+                    int num1 = scanner.nextInt();
+                    System.out.println("Skriv in andra numret:");
+                    int num2 = scanner.nextInt();
 
-                case 2:{
+                    Addition add = new Addition(num1, num2);
+                    System.out.println(add.toString());
+                    break;
+                }
+
+
+                case 2: {
 
                 }
 
-                case 3:{
+                case 3: {
 
                 }
 
-                case 4:{
-                    }
+                case 4: {
+                }
 
                 case 5:
                     running = false;
