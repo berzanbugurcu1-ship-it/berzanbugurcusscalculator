@@ -8,7 +8,7 @@ public class Main {
         boolean running = true;
 
         while (running) {
-            System.out.println("Welcome to Berzans Calculator");
+            System.out.println("Välkommen till Berzans Kalkylator! Välj ett utav räknesätten nedanför!");
             System.out.println("1) Addition (+)");
             System.out.println("2) Subtraction (-)");
             System.out.println("3) Multiplication (*)");
@@ -19,7 +19,7 @@ public class Main {
 
             switch (choice) {
                 case 1: {
-                    System.out.println("Skriv in första numret:");          //fixa modulus imorgon för vg, lägg till hur du tänkt och förklaringar/reflektioner bakom koden
+                    System.out.println("Skriv in första numret:");
                     int num1 = scanner.nextInt();
                     System.out.println("Skriv in andra numret:");
                     int num2 = scanner.nextInt();
